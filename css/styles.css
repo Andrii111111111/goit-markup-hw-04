@@ -432,7 +432,28 @@ body {
 .customers-links {
     display: flex;
     gap: 24px;
+
+}
+
+.customers-links-item {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    fill: #8E8F99;
+}
+
+.customers-icon {
+    fill: inherit;
+}
+
+.customers-links-item:hover,
+.customers-links-item:focus {
+    fill: var(--active-link-color);
+    border-color: var(--active-link-color);
 }
 
 
