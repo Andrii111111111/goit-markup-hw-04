@@ -274,13 +274,13 @@ body {
 
 
 /* about */
-.about-icon-list {
+.about-icons {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
-.about-icon-list-item {
+.about-icon-container {
     width: 264px;
     height: 112px;
     display: flex;
