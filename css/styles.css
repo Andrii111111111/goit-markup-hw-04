@@ -274,7 +274,7 @@ body {
 
 
 /* about */
-.about-icons {
+.about-icons-list {
     display: flex;
     justify-content: center;
     gap: 24px;
