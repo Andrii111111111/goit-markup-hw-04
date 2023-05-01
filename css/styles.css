@@ -157,8 +157,10 @@ body {
 
 
 /* footer */
+
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-cl-txt {
@@ -185,10 +187,15 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .footer-left-side {
     margin-right: 120px;
+}
+
+.socials-icon {
+    fill: var(--bg-buttons);
 }
 
 .footer-socials {
@@ -257,8 +264,11 @@ body {
 .hero {
 
     background-color: var(--bg-color);
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero.jpg);
-    background-size: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
     padding: 188px 0;
 }
 
@@ -385,7 +395,7 @@ body {
 }
 
 .team-list-card {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .socials {
@@ -421,7 +431,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -442,16 +452,16 @@ body {
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    fill: #8E8F99;
+    color: #8E8F99;
 }
 
 .customers-icon {
-    fill: inherit;
+    fill: currentColor;
 }
 
 .customers-link:hover,
 .customers-link:focus {
-    fill: var(--active-link-color);
+    color: var(--active-link-color);
     border-color: var(--active-link-color);
 }
 
@@ -529,7 +539,11 @@ body {
     border-top: none;
 }
 
-.production-list-item:hover,
-.production-list-item:focus {
+.production-links {
+    display: block;
+}
+
+.production-links:hover,
+.production-links:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
